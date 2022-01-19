@@ -1,8 +1,5 @@
 import "./App.css";
-import ReactAnimatedWeather from "react-animated-weather";
 
-function App() {
-  return <div className="App"></div>;
-}
+function App() {}
 
 export default App;
