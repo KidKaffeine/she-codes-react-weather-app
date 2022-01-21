@@ -1,0 +1,18 @@
+.Form .input,
+.Form button {
+  font-family: "Kanit", sans-serif;
+}
+
+.Form .input {
+  background-image: url(./images/Space.jpg);
+  background-color: #fff;
+  border: solid 1px rgb(119, 215, 218);
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-bottom: 15px;
+}
+
+.input::placeholder,
+.input:focus {
+  color: #fff;
+}
