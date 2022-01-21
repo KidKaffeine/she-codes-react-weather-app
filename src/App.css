@@ -5,6 +5,17 @@ body {
   background-attachment: fixed;
 }
 
+footer {
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 122);
+}
 .container {
   display: flex;
   justify-content: center;
@@ -13,3 +24,5 @@ body {
   border-radius: 10px;
   margin-top: 40px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");

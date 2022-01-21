@@ -20,14 +20,10 @@ export default function Form() {
         <input
           type="text"
           className="input"
-          placeholderTextColor="white"
           placeholder="Search city"
           onChange={getCity}
         />
-        <button type="submit" on>
-          {" "}
-          Search{" "}
-        </button>
+        <button type="submit"> Search </button>
       </form>
     </div>
   );
