@@ -7,16 +7,19 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherDetails() {
   return (
-    <div className="row mt-4">
+    <div className="WeatherDetails row">
       <div className="col-sm-6">
         <Form />
         <h1>Berlin</h1>
-        <ReactAnimatedWeather
-          icon="CLEAR_DAY"
-          color="white"
-          size={70}
-          animate={true}
-        />
+        <div className="icon">
+          <ReactAnimatedWeather
+            icon="CLEAR_DAY"
+            color="white"
+            size={70}
+            animate={true}
+          />
+        </div>
+
         <h3> Sunny / 3°C</h3>
         <ul>
           <li>Humidity: 75%</li>

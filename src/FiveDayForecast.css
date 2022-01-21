@@ -19,3 +19,10 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+
+@media only screen and (max-width: 576px) {
+  .FiveDayForecast {
+    display: flex;
+    align-items: center;
+  }
+}

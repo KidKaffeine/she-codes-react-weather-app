@@ -26,3 +26,14 @@ footer a {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+
+@media only screen and (max-width: 768px) {
+  footer {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .container {
+    margin-top: 0px;
+    border: none;
+  }
+}
