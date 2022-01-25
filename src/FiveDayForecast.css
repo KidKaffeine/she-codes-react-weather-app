@@ -1,7 +1,6 @@
 .FiveDayForecast {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   color: #fff;
   font-family: "Kanit", sans-serif;
 }
@@ -24,5 +23,14 @@
   .FiveDayForecast {
     display: flex;
     align-items: center;
+  }
+
+  .DayOne,
+  .DayTwo,
+  .DayThree,
+  .DayFour,
+  .DayFive {
+    display: inline;
+    padding: 7px;
   }
 }
