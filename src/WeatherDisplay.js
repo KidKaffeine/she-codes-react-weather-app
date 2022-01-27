@@ -14,15 +14,19 @@ export default function WeatherDisplay(props) {
         <Icons dataIcon={props.data.icon} alt={props.data.overview} size={52} />
       </div>
       <h3>
-        {props.data.overview}, {Math.round(props.data.temperature)}° C
+        {props.data.overview} - {Math.round(props.data.temperature)}° C
       </h3>{" "}
       <ul>
         <li>Humidity: {props.data.humidity}%</li>
         <li>Wind: {Math.round(props.data.wind)} km/h</li>
         <li>Real Feel: {Math.round(props.data.realFeel)}°C</li>
       </ul>
-      <div className="dateAndTime">
-        <Time dataDate={props.data.date} />, <Date dataTime={props.data.date} />
+      <div className="time">
+        Last updated at{" "}
+        <span>
+          {" "}
+          <Time dataDate={props.data.date} />
+        </span>
       </div>
     </div>
   );

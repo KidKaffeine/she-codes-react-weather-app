@@ -26,12 +26,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
+  .App .container {
     margin-top: 0px;
     border: none;
   }
 
-  footer {
+  .App footer {
     font-size: 12px;
   }
 }
