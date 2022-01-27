@@ -5,25 +5,25 @@ body {
   background-attachment: fixed;
 }
 
-footer {
+.App footer {
   font-family: "Kanit", sans-serif;
   color: #fff;
   text-align: center;
-  margin: 20px 80px 20px 0px;
+  margin: -25px 0px 25px;
 }
 
-footer a {
+.App footer a {
   text-decoration: none;
   color: rgb(255, 255, 122);
 }
-.container {
-  padding: 50px;
-  border: solid 1px #fff;
-  border-radius: 10px;
-  margin-top: 40px;
-}
 
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+.App .container {
+  padding: 50px;
+  margin-top: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -32,8 +32,6 @@ footer a {
   }
 
   footer {
-    margin: 0 auto;
     font-size: 12px;
-    margin: -40px 0px 20px 0px;
   }
 }

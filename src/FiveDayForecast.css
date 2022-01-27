@@ -5,31 +5,22 @@
   font-family: "Kanit", sans-serif;
 }
 
-.DayOne,
-.DayTwo,
-.DayThree,
-.DayFour,
-.DayFive {
-  padding: 5px 20px;
+.FiveDayForecast .day {
+  padding: 5px 10px;
   border: solid 1px rgb(119, 215, 218);
   border-radius: 15px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
-
 @media only screen and (max-width: 576px) {
   .FiveDayForecast {
     display: flex;
     align-items: center;
+    margin-bottom: -20px;
   }
 
-  .DayOne,
-  .DayTwo,
-  .DayThree,
-  .DayFour,
-  .DayFive {
+  .FiveDayForecast .day {
     display: inline;
     padding: 7px;
   }

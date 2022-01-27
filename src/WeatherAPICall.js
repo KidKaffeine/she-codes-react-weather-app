@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "./WeatherAPICall.css";
 import axios from "axios";
 import WeatherDisplay from "./WeatherDisplay";
+import FiveDayForecast from "./FiveDayForecast";
 
-export default function Form(props) {
+export default function WeatherAPICall(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
+      coordinates: response.data.coord,
       loaded: true,
       temperature: response.data.main.temp,
       city: response.data.name,
@@ -38,21 +40,28 @@ export default function Form(props) {
 
   if (weatherData.loaded) {
     return (
-      <div className="Form">
-        <form onSubmit={handleEvent}>
-          <input
-            type="search"
-            placeholder="Type a city"
-            className="form-control"
-            onChange={getCity}
-          />
-          <input type="submit" value="Search" />
-        </form>
-        <WeatherDisplay data={weatherData} />
+      <div className="WeatherAPICall">
+        <div className="row">
+          <div className="col-sm-6">
+            <form onSubmit={handleEvent}>
+              <input
+                type="search"
+                placeholder="Type a city"
+                className="form-control input"
+                onChange={getCity}
+              />
+              <button type="submit">Search</button>
+            </form>
+            <WeatherDisplay data={weatherData} />
+          </div>
+          <div className="col-sm-6">
+            <FiveDayForecast coordinates={weatherData.coordinates} />
+          </div>
+        </div>
       </div>
     );
   } else {
     runAPI();
-    return `Loading`;
+    return <div className="WeatherAPICall"> Loading...</div>;
   }
 }
