@@ -23,5 +23,7 @@
   .FiveDayForecast .day {
     display: inline;
     padding: 7px;
+    font-weight: bold;
+    border: solid 2px rgb(119, 215, 218);
   }
 }

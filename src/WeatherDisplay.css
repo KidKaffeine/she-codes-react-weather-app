@@ -45,6 +45,7 @@
   .WeatherAPICall h3,
   .WeatherAPICall ul li {
     text-align: center;
+    font-weight: bold;
   }
 
   .WeatherAPICall h3 {
