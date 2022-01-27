@@ -43,15 +43,20 @@ ul,
     text-align: center;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
   .icon {
     display: flex;
     justify-content: center;
   }
 
   .dateAndTime {
-    text-align: center;
-    line-height: 0.7;
-    font-size: 13px;
-    margin: 0px 0px 15px;
+    display: none;
   }
 }
