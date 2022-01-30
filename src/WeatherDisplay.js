@@ -14,7 +14,7 @@ export default function WeatherDisplay(props) {
         <Icons dataIcon={props.data.icon} alt={props.data.overview} size={52} />
       </div>
       <h3>
-        {props.data.overview} - {Math.round(props.data.temperature)}° C
+        {props.data.overview}, {Math.round(props.data.temperature)}°C
       </h3>{" "}
       <ul>
         <li>Humidity: {props.data.humidity}%</li>

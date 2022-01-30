@@ -3,6 +3,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
+  font-family: "Kanit", sans-serif;
 }
 
 .App footer {
@@ -25,6 +27,8 @@ body {
   justify-content: center;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap");
+
 @media only screen and (max-width: 768px) {
   .App .container {
     margin-top: 0px;
@@ -33,6 +37,5 @@ body {
 
   .App footer {
     font-size: 12px;
-    font-weight: bold;
   }
 }
