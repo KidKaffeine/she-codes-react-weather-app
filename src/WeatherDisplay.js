@@ -2,7 +2,6 @@ import React from "react";
 import "./WeatherDisplay.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Icons from "./Icons";
-import Date from "./Date";
 import Time from "./Time";
 
 export default function WeatherDisplay(props) {

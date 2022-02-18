@@ -9,7 +9,7 @@ function App() {
         <WeatherAPICall defaultCity="Berlin" />
       </div>
       <footer>
-        App built by Vanessa Marques. Open source code on{" "}
+        Open source code on{" "}
         <a
           href="https://github.com/ZebraDancer/react-weather-app"
           target="_blank"

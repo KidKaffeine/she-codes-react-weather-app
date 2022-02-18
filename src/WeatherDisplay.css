@@ -25,9 +25,9 @@
 }
 
 .WeatherDisplay .time {
-  margin-top: 80px;
   font-size: 14px;
   display: flex;
+  margin: -15px -3px;
 }
 
 .WeatherDisplay .time span {
