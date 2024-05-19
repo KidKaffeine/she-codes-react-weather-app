@@ -18,12 +18,12 @@ export default function DailyForecastData(props) {
   }
 
   function minTemp() {
-    let minTemperature = Math.round(props.data.temp.min);
+    let minTemperature = Math.round(props.data.main.temp_min);
     return `${minTemperature}° C`;
   }
 
   function maxTemp() {
-    let maxTemperature = Math.round(props.data.temp.max);
+    let maxTemperature = Math.round(props.data.main.temp_max);
     return `${maxTemperature}° C`;
   }
   return (
